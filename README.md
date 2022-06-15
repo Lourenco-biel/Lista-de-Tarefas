@@ -11,9 +11,9 @@ Este projeto trata-se de uma lista de tarefas para seu dia á dia! incluindo tar
 ## 🔧Ajustes e melhorias
 O projeto ainda está em desenvolvimento !
 
--[] Armazenar a lista no localStorage
--[] Incrementar botão de DELETE
--[] Adicionar funcionalidade no botão + para incluir mais uma tarefa
+- [ ] Armazenar a lista no localStorage
+- [ ] Adicionar funcionalidade no botão + para incluir mais uma tarefa
+- [ ] Incrementar botão de DELETE
 
 <br>
 
