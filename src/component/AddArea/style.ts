@@ -8,9 +8,18 @@ margin: 20px 0;
 display: flex;
 align-items: center;
 
-.image{
+button{
 margin-right: 5px;
+background: none;
+    border: none;
+    cursor: pointer;
+    &:hover{
+            opacity: 0.8;
+        }
 
+        &:active{
+            opacity: 0.5;
+        }
 }
 
 input{

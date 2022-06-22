@@ -12,22 +12,29 @@ const [inputText, setInputText] = useState('')
 
  const handleKeyUp = (e: KeyboardEvent)=>{
     if( (e.code === 'Enter' || e.code === 'NumpadEnter')&& inputText !== '' ){
+        onEnter(inputText)
+        setInputText(''); 
+        
+    }
+}
+const handleKey = ()=>{
+    
         onEnter(inputText);
         setInputText(''); 
         
     }
     
-}
 
     return(
         <c.Container>
-            <div className='image'> ➕</div>
+            <button onClick={handleKey}> ➕</button>
             <input 
             type='text'
             placeholder='Adicione uma tarefa'
             value={inputText}
             onChange={e=> setInputText(e.target.value)}
             onKeyUp={handleKeyUp}
+            
             />
         </c.Container>
     )
