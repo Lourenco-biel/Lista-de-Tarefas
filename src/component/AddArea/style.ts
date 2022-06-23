@@ -9,8 +9,8 @@ display: flex;
 align-items: center;
 
 button{
-margin-right: 5px;
-background: none;
+    margin-right: 5px;
+    background: none;
     border: none;
     cursor: pointer;
     &:hover{
@@ -30,5 +30,4 @@ input{
     font-size: 18px;
     flex: 1px;
 }
-
 `

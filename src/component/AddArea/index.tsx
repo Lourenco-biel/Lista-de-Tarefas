@@ -5,8 +5,6 @@ type Props ={
     onEnter:(taskName: string)=> void
 }
 
-
-
 export const AddArea =({onEnter}: Props) =>{
 const [inputText, setInputText] = useState('')
 
@@ -14,17 +12,18 @@ const [inputText, setInputText] = useState('')
     if( (e.code === 'Enter' || e.code === 'NumpadEnter')&& inputText !== '' ){
         onEnter(inputText)
         setInputText(''); 
-        
     }
 }
+
 const handleKey = ()=>{
-    
+    if(inputText === ''){
+        alert("Nenhuma tarefa adicionada, tente novamente!")
+    }else{
         onEnter(inputText);
         setInputText(''); 
-        
+    }
     }
     
-
     return(
         <c.Container>
             <button onClick={handleKey}> ➕</button>
@@ -33,9 +32,7 @@ const handleKey = ()=>{
             placeholder='Adicione uma tarefa'
             value={inputText}
             onChange={e=> setInputText(e.target.value)}
-            onKeyUp={handleKeyUp}
-            
-            />
+            onKeyUp={handleKeyUp}/>
         </c.Container>
     )
 }

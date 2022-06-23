@@ -7,44 +7,64 @@ type ContainerProps={
 
 export  const Container = styled.div(({done}: ContainerProps)=>(
     `
-display: flex;
-background-color: #20212C;
-padding: 10px;
-border-radius: 10px;
-margin-bottom: 10px;
-align-items: center;
-/* justify-content: space-between; */
+        display: flex;
+        background-color: #20212C;
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        align-items: center;
 
-input{
-    width: 25px;
-    height: 25px;
-    margin-right: 8px;
-}
+    label{
+        display:block;
+        width: 25px;
+        height: 25px;
+        cursor:pointer;
+        margin-right: 10px;
+    }
 
+    input{
+        position: absolute; 
+        transform: scale(0);
+    }
 
-div{
-    color:#CCC;
-    text-decoration: ${done ? 'line-through':'initial'};
-    width: 883px;
-    word-break: break-word;
+    input:checked ~ .checkbox{
+        transform: rotate(45deg);
+        width:17px;
+        margin-left:4px;
+        border-color: #24c78e;
+        border-top-color: transparent;
+        border-left-color: transparent;
+        border-radius:0;
+    }
 
-}
+    .checkbox{
+        display:block;
+        width:inherit;
+        height:inherit;
+        border:3px solid #434343;
+        border-radius:6px;
+        transition: all 0.375s;
+    }
 
-button{
-    background: none;
-    border: none;
-    cursor: pointer;
+    div{
+        color:#CCC;
+        text-decoration: ${done ? 'line-through':'initial'};
+        width: 883px;
+        word-break: break-word;
+    }
 
-    &:hover{
-            opacity: 0.8;
-        }
+    button{
+        background: none;
+        border: none;
+        cursor: pointer;
+        &:hover{
+                opacity: 0.8;
+            }
 
-        &:active{
-            opacity: 0.5;
-        }
-}
-`
-
-
+            &:active{
+                opacity: 0.5;
+            }
+    }
+    `
 ))
 
