@@ -14,7 +14,7 @@ O projeto ainda está em desenvolvimento !
 - [X] Armazenar a lista no localStorage
 - [X] Adicionar funcionalidade no botão + para incluir mais uma tarefa
 - [X] Incrementar botão de DELETE
-- [ ] Adicionar modo dark
+- [X] Adicionar modo dark
 <br>
 
 ## 👨‍💻Link para acesso: 
