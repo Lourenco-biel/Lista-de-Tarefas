@@ -28,7 +28,7 @@ export const Container = styled.div(({done}: ContainerProps)=>(
     
     .toggler{
         display: block;
-        width: 88px;
+        width: 86px;
         height: 31px;
         border: 2px solid black;
         border-radius: 30px;
@@ -56,7 +56,7 @@ export const Container = styled.div(({done}: ContainerProps)=>(
             width: 29px;
             background-color: black;
             border-radius: 50%;
-            left: 1px;
+            left: 0px;
             z-index: 10;
             transition: transform .5s ease-in-out;
         }
