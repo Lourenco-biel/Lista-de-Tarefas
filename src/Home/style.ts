@@ -43,12 +43,12 @@ export const Container = styled.div(({ done }: ContainerProps) => (
     
         .sun{
             left: 5px;
-            font-size:10px
+            font-size:${done ? '14px': '10px'}
         }
     
         .moon{
             right: 5px;
-            font-size:10px
+            font-size:${done ? '10px': '14px'}
         }
         
         .ball{ 
