@@ -7,7 +7,7 @@
 <br>
 
 ## 💻 Sobre o Projeto
-Este projeto trata-se de uma lista de tarefas para seu dia á dia! incluindo tarefas pedentes e adicionando um check em suas tarefas realizadas, Foi utilizado Javascript, React, TypeScrip para o desenvolvimento deste projeto.
+Este projeto trata-se de uma lista de tarefas para seu dia á dia! incluindo tarefas pedentes e adicionando um check em suas tarefas realizadas, Foi utilizado React, TypeScrip para o desenvolvimento deste projeto.
 ## 🔧Ajustes e melhorias
 O projeto ainda está em desenvolvimento !
 
