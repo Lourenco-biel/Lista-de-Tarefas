@@ -11,11 +11,14 @@ Este projeto trata-se de uma lista de tarefas para seu dia á dia! incluindo tar
 ## 🔧Ajustes e melhorias
 O projeto ainda está em desenvolvimento !
 
-- [ ] Armazenar a lista no localStorage
-- [ ] Adicionar funcionalidade no botão + para incluir mais uma tarefa
-- [ ] Incrementar botão de DELETE
-
+- [X] Armazenar a lista no localStorage
+- [X] Adicionar funcionalidade no botão + para incluir mais uma tarefa
+- [X] Incrementar botão de DELETE
+- [ ] Adicionar modo dark
 <br>
+
+## 👨‍💻Link para acesso: 
+<a href="https://organizador-de-tarefas.netlify.app/">Aperte aqui ⬅ </a>
 
 
 ## ☕ tecnologias utilizadas
