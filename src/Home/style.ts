@@ -6,8 +6,8 @@ type ContainerProps = {
 
 export const Container = styled.div(({ done }: ContainerProps) => (
     `
-    background-color: ${done ? 'rgb(186 237 240 / 50%)' : '#17181f'};
-    color:#797A81;
+    background-color: ${done ? '#17181f' : 'rgb(66 92 172 / 50%)' };
+    color: ${done ? '#6d6c6c' : '##CCC'};
     min-height: 100vh;
     
     .Area{
@@ -20,21 +20,20 @@ export const Container = styled.div(({ done }: ContainerProps) => (
     .header{
         margin: 0;
         padding: 0;
-        color: #fff;
+        color: ${done ? '#fff': '#333981' };
         text-align: center;
-        border-bottom: 1px solid #444;
+        border-bottom: 1px solid #CCC;
         padding-bottom: 20px;
     }
     
     .toggler{
         display: block;
-        width: 84px;
+        width: 83px;
         height: 31px;
-        border: 2px solid black;
+        border: 2px solid  ${done ? '#CCC':'#333981' };
         border-radius: 30px;
         position: relative;
         cursor: pointer;
-    
        
         .sun,.moon,.ball{
             position: absolute;
@@ -44,17 +43,19 @@ export const Container = styled.div(({ done }: ContainerProps) => (
     
         .sun{
             left: 5px;
+            font-size:10px
         }
     
         .moon{
             right: 5px;
+            font-size:10px
         }
         
         .ball{ 
             display: inline-block;
             height: 29px;
             width: 29px;
-            background-color: black;
+            background-color: ${done ?  '#CCC' : '#333981' };
             border-radius: 50%;
             left: -1px;
             z-index: 10;
