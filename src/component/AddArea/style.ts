@@ -1,22 +1,21 @@
 import styled from "styled-components";
 
-export const Container =styled.div`
-border: 1px solid #555;
-border-radius: 15px;
-padding: 10px;
-margin: 20px 0;
-display: flex;
-align-items: center;
+export const Container = styled.div`
+    border: 1px solid #555;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
 
 button{
-    margin-right: 5px;
+    margin-right: 5px;  
     background: none;
     border: none;
     cursor: pointer;
-    &:hover{
+        &:hover{
             opacity: 0.8;
         }
-
         &:active{
             opacity: 0.5;
         }

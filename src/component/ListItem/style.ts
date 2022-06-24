@@ -6,8 +6,7 @@ type ContainerProps={
 }
 
 export  const Container = styled.div(({done}: ContainerProps)=>(
-    `
-        display: flex;
+    `   display: flex;
         background-color: #20212C;
         padding: 10px;
         border-radius: 10px;
@@ -58,12 +57,11 @@ export  const Container = styled.div(({done}: ContainerProps)=>(
         border: none;
         cursor: pointer;
         &:hover{
-                opacity: 0.8;
-            }
-
-            &:active{
-                opacity: 0.5;
-            }
+            opacity: 0.8;
+        }
+        &:active{
+            opacity: 0.5;
+        }
     }
     `
 ))

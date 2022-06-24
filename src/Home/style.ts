@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
-type ContainerProps={
+type ContainerProps = {
     done: boolean;
 }
 
-export const Container = styled.div(({done}: ContainerProps)=>(
+export const Container = styled.div(({ done }: ContainerProps) => (
     `
-    background-color: ${done? 'rgb(186 237 240 / 50%)': '#17181f'};
+    background-color: ${done ? 'rgb(186 237 240 / 50%)' : '#17181f'};
     color:#797A81;
     min-height: 100vh;
     
@@ -18,17 +18,17 @@ export const Container = styled.div(({done}: ContainerProps)=>(
     
     
     .header{
-    margin: 0;
-    padding: 0;
-    color: #fff;
-    text-align: center;
-    border-bottom: 1px solid #444;
-    padding-bottom: 20px;
+        margin: 0;
+        padding: 0;
+        color: #fff;
+        text-align: center;
+        border-bottom: 1px solid #444;
+        padding-bottom: 20px;
     }
     
     .toggler{
         display: block;
-        width: 86px;
+        width: 84px;
         height: 31px;
         border: 2px solid black;
         border-radius: 30px;
@@ -56,22 +56,19 @@ export const Container = styled.div(({done}: ContainerProps)=>(
             width: 29px;
             background-color: black;
             border-radius: 50%;
-            left: 0px;
+            left: -1px;
             z-index: 10;
             transition: transform .5s ease-in-out;
         }
         #checkbox{
             display: none;
-    
             &:checked + .ball{ 
             transform:  translate(52px, -50%);
+            }
         }
-        }
-    
     }
-    
     `
-    ))
+))
 
 
 
