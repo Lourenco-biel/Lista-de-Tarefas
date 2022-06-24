@@ -4,7 +4,10 @@ import {Item} from '../types/Item'
 import { ListItem } from '../component/ListItem';
 import {AddArea} from '../component/AddArea';
 
-
+/* type ContainerProps={
+  done: boolean;
+}
+ */
 export const App= () => {
  const [list, setList] = useState<Item[]>([]);
  
@@ -47,23 +50,21 @@ export const App= () => {
       setMyList(newList)
   }
 
+  
+
   return (
-    <c.Container>
-      <c.Area>
-        <c.Header>Lista de Tarefas
-        
-        <c.Label done
+    <c.Container done={false}>
+      <div className='Area'>
+        <h1 className='header'>Lista de Tarefas
+        <label
         htmlFor="checkbox" className="toggler">
-          <input type="checkbox" id="checkbox"/>
+          <input type="checkbox" id="checkbox" />
           <span  className="ball"></span>
           <i  className="sun"></i>
           <i  className="moon"></i>
-        </c.Label> 
-
-
-        </c.Header>
+        </label> 
+        </h1>
      
-
           <AddArea  onEnter={handleAddTask}/>
           {list.map((item, index)=> (
               <ListItem key={index} 
@@ -72,7 +73,7 @@ export const App= () => {
               onClick={(id)=> Delete(id)}
               />
           ))}
-      </c.Area>
+      </div>
     </c.Container>
   );
 }
