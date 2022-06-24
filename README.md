@@ -1,6 +1,6 @@
 # Lista de Tarefas
 
-<img src="./src/Assets/gif.gif" alt="Gif do projeto">
+<img src="./src/Assets/gif1.gif" alt="Gif do projeto">
 
 
 > Projeto finalizado 
